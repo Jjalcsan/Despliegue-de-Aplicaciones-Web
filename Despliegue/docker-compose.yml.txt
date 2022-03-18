@@ -1,0 +1,12 @@
+version: "1.29.2"
+
+services:
+  app:
+    image: tomcat:9.0
+    command: docker run -it 8888:8080 tomcat:9.0
+    ports:
+      - 8888:8080
+    volumes:
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+      - ./manager.xml:/usr/local/tomcat/conf/Catalina/localhost/manager.xml
+      - ./Carrito.war:/usr/local/tomcat/webapps/Carrito.war

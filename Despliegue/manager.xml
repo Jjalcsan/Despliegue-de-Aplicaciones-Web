@@ -1,0 +1,4 @@
+<Context privileged="true" antiResourceLocking="false" docBase="${catalina.home}/webapps/manager">
+<CookieProcessor className="org.apache.tomcat.util.http.Rfc6265CookieProcessor" sameSiteCookies="strict"/>
+<Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
